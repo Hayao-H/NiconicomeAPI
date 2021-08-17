@@ -26,10 +26,7 @@
 - [PageAnalyze](./page-analyze.md)
 
 ### Permission
-name：```hooks```
-```c#
-public static string Hooks { get; private set; } = "hooks";
-```
+```hooks```
 
 ## Q & A
 None
