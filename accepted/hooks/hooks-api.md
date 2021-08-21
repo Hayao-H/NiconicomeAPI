@@ -33,7 +33,12 @@
 None
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-v1.0 | - | -
-v1.1.0 | 2021/08/21 | Watch Sessionへのリンクを追加。
+Date | Description
+:---:| :---:
+2021/08/17 | APIを定義。
+2021/08/21 | Watch Sessionへのリンクを追加。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.0

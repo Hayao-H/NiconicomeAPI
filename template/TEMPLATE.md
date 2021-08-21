@@ -17,5 +17,9 @@
 ## Q & A
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
+Date | Description
+:---:| :---:
+
+## Applies to
+Application | Target API Version
+:--: | --

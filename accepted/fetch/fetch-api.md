@@ -105,6 +105,11 @@ _output.write(content);
 :heavy_check_mark: Niconicomeはアドオンのインストール時に、ユーザーに対してリクエストを送信できるドメインの許可を得る必要があるため、CORSの実装は必要ないと考えます。
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-1.1.0 | 2021/08/21 | fetch APIを定義。
+Date | Description
+:---:| :---:
+2021/08/21 | Fetch APIを定義。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.1

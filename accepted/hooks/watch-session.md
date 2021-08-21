@@ -40,6 +40,11 @@ interface SessionInfo {
 None
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-v1.1.0 | 2021/08/21 | Watch Sessionの定義を追加。
+Date | Description
+:---:| :---:
+2021/08/21 | Watch Sessionの定義を追加。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.1

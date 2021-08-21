@@ -119,7 +119,12 @@
 None
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-v1.0.0 | - | -
-v1.0.1 | 2021/08/21 | Fetch APIに関するリンクを追加。
+Date | Description
+:---:| :---:
+2021/08/17 | 初版作成。
+2021/08/21 | Fetch APIに関するリンクを追加。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.0
