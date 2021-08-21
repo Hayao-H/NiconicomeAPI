@@ -24,6 +24,7 @@
 
 ### Detailed Infomations
 - [PageAnalyze](./page-analyze.md)
+- [WatchSession](./watch-session.md)
 
 ### Permission
 ```hooks```
@@ -35,3 +36,4 @@ None
 Target API Version | Date | Description
 --- | :---:| :---:
 v1.0 | - | -
+v1.1.0 | 2021/08/21 | Watch Sessionへのリンクを追加。
