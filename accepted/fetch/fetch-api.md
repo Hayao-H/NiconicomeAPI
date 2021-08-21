@@ -107,4 +107,4 @@ _output.write(content);
 ## Revision
 Target API Version | Date | Description
 --- | :---:| :---:
-1.1.0 | 2021/08/31 | fetch APIを定義。
+1.1.0 | 2021/08/21 | fetch APIを定義。
