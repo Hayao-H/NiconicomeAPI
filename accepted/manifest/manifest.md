@@ -67,7 +67,7 @@
         ターゲットAPIバージョン。【必須】
         APIの互換性のないバージョンへのインストールを防ぐことができます。
         */
-        "target_api_version": "1.0",　
+        "target_api_version": "1.0.1",　
         /*
         権限。【任意】*2
         必要な場合に定義してください。
@@ -119,7 +119,12 @@
 None
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-v1.0.0 | - | -
-v1.0.1 | 2021/08/21 | Fetch APIに関するリンクを追加。
+Date | Description
+:---:| :---:
+2021/08/17 | 初版作成。
+2021/08/21 | Fetch APIに関するリンクを追加。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.0

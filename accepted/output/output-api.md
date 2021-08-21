@@ -33,6 +33,11 @@ application.output.write(message: string): void;
 ## Q & A
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-v1.0.0 | - | -
+Date | Description
+:---:| :---:
+2021/08/17 | Log APIの定義を追加。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.0

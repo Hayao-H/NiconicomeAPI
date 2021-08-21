@@ -31,6 +31,12 @@ application.hooks.registerPageAnalyzeFunction(func: (page: string) => DmcInfo): 
 None
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-v1.0.0 | - | -
+Date | Description
+:---:| :---:
+2021/08/17 | APIを定義。
+2021/08/21 | Target API Versionを明記。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.0

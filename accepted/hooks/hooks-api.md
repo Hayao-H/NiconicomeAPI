@@ -24,6 +24,7 @@
 
 ### Detailed Infomations
 - [PageAnalyze](./page-analyze.md)
+- [WatchSession](./watch-session.md)
 
 ### Permission
 ```hooks```
@@ -32,6 +33,12 @@
 None
 
 ## Revision
-Target API Version | Date | Description
---- | :---:| :---:
-v1.0 | - | -
+Date | Description
+:---:| :---:
+2021/08/17 | APIを定義。
+2021/08/21 | Watch Sessionへのリンクを追加。
+
+## Applies to
+Application | Target API Version
+:--: | --
+Niconicome | <= 1.0
