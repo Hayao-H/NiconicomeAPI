@@ -79,7 +79,7 @@
         ],
         /*
         ホスト権限【任意】*3
-        fetch APIを利用する場合に定義してください。
+        Fetch APIを利用する場合に定義してください。
         */
         "host_permissions": [],
         /*
@@ -102,9 +102,18 @@
 - hooks ([参照](../hooks/hooks-api.md))
 - output ([参照](../output/output-api.md))
 - log ([参照](../log/log-api.md))
+- session([参照](../fetch/fetch-api.md#Permission));
 
 ### *3 ホスト権限
 パターンマッチングを利用できます。  
+詳しくは[こちら](../fetch/fetch-api.md#HostPermissions)
+#### 例
+```
+[
+    https://*.nicovideo.jp,
+    http://*.nicovideo.jp
+]
+```
 
 ## Q & A
 None
@@ -113,3 +122,4 @@ None
 Target API Version | Date | Description
 --- | :---:| :---:
 v1.0.0 | - | -
+v1.0.1 | 2021/08/21 | Fetch APIに関するリンクを追加。
