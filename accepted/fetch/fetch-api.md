@@ -101,7 +101,7 @@ _output.write(content);
 
 ## Q & A
 
-:question: Q. CORSには対応しないのですか？
+:question: Q. CORSには対応しないのですか？  
 :heavy_check_mark: Niconicomeはアドオンのインストール時に、ユーザーに対してリクエストを送信できるドメインの許可を得る必要があるため、CORSの実装は必要ないと考えます。
 
 ## Revision
