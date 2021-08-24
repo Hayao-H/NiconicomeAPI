@@ -23,7 +23,7 @@
 ```TypeScript
 application.hooks.registerSessionEnsuringFunction(func: (info: DmcInfo) => Promise<SessionInfo>): void;
 
-interface SessionInfo {
+interface NiconicoSessionInfo {
 
     //HeartBeatで送信するコンテンツ
     DmcResponseJsonData:string;
