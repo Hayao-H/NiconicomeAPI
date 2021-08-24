@@ -21,7 +21,7 @@
 
 #### API
 ```TypeScript
-application.hooks.registerSessionEnsuringFunction(func: (info: DmcInfo) => SessionInfo): void;
+application.hooks.registerSessionEnsuringFunction(func: (info: DmcInfo) => Promise<SessionInfo>): void;
 
 interface SessionInfo {
 
@@ -43,6 +43,7 @@ None
 Date | Description
 :---:| :---:
 2021/08/21 | Watch Sessionの定義を追加。
+2021/08/24 | セッション確立関数を非同期化。
 
 ## Applies to
 Application | Target API Version
