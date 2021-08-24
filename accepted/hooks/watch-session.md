@@ -43,7 +43,7 @@ None
 Date | Description
 :---:| :---:
 2021/08/21 | Watch Sessionの定義を追加。
-2021/08/24 | セッション確立関数を非同期化。
+2021/08/24 | セッション確立関数を非同期化。interface名を変更。
 
 ## Applies to
 Application | Target API Version
