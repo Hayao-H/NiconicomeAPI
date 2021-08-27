@@ -8,3 +8,4 @@
 - [Hooks API](./hooks/hooks-api.md)
 - [Log API](./log/log-api.md)
 - [Output API](./output/output-api.md)
+- [Storage API](./storage/storage-api.md)
