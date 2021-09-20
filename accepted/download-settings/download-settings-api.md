@@ -87,4 +87,4 @@ Date | Description
 ## Applies to
 Application | Target API Version
 :--: | --
-Niconicome | >=1.2.0
+Niconicome | >= 1.2.0

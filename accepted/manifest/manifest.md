@@ -123,8 +123,9 @@ Date | Description
 :---:| :---:
 2021/08/17 | 初版作成。
 2021/08/21 | Fetch APIに関するリンクを追加。
+2021/09/20 | APIバージョンの表記を修正
 
 ## Applies to
 Application | Target API Version
 :--: | --
-Niconicome | <= 1.0
+Niconicome | >= 1.0
