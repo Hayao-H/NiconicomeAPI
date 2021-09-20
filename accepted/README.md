@@ -10,3 +10,4 @@
 - [Output API](./output/output-api.md)
 - [Storage API](./storage/storage-api.md)
 - [Download Settings API](./download-settings/download-settings-api.md)
+- [Resource API](./resource/resource-api.md)
