@@ -51,8 +51,9 @@ None
 Date | Description
 :---:| :---:
 2021/08/27 | 初版作成。
+2021/09/20 | APIバージョンの表記を修正
 
 ## Applies to
 Application | Target API Version
 :--: | --
-Niconicome | <=v1.2.0
+Niconicome | >=v1.2.0

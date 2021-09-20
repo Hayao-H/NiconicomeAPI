@@ -44,8 +44,9 @@ Date | Description
 :---:| :---:
 2021/08/21 | Watch Sessionの定義を追加。
 2021/08/24 | セッション確立関数を非同期化。interface名を変更。
+2021/09/20 | APIバージョンの表記を修正
 
 ## Applies to
 Application | Target API Version
 :--: | --
-Niconicome | <= 1.1
+Niconicome | >= 1.1

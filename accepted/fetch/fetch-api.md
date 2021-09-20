@@ -108,8 +108,9 @@ _output.write(content);
 Date | Description
 :---:| :---:
 2021/08/21 | Fetch APIを定義。
+2021/09/20 | APIバージョンの表記を修正
 
 ## Applies to
 Application | Target API Version
 :--: | --
-Niconicome | <= 1.1
+Niconicome | >= 1.1
