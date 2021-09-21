@@ -38,16 +38,27 @@
 
 ### API
 ```TypeScript
-application.resource: { [relativePath:string] : string | null }
+
+/*
+非同期にリソースを取得します。(連想配列)
+キーはresourceフォルダーからの相対パスです。
+不正なパスが与えられたり、読み込みに失敗した場合はnullを返します。
+*/
+application.resource: { [relativePath:string] : Promise<string | null> }
+
 ```
 
 ### Example
 ```TypeScript
-const doc1:string = application.resource['docment1.html'];
-const readme:string = application.resource['special/readme.txt'];
+async function main() {
 
-_output.write(doc1);
-_output.write(readme);
+    const doc1:string = await application.resource['docment1.html'];
+    const readme:string = await application.resource['special/readme.txt'];
+
+    _output.write(doc1);
+    _output.write(readme);
+
+}
 ```
 
 ## Q & A
@@ -56,6 +67,7 @@ _output.write(readme);
 Date | Description
 :---:| :---:
 2021/09/20 | 初版作成
+2021/09/21 | APIを非同期化。
 
 ## Applies to
 Application | Target API Version
