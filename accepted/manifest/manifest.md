@@ -103,6 +103,9 @@
 - output ([参照](../output/output-api.md))
 - log ([参照](../log/log-api.md))
 - session([参照](../fetch/fetch-api.md#Permission));
+- resource([参照](../resource/resource-api.md#Permission))
+- storage([参照](../storage/storage-api.md#Permission))
+- tab([参照](../tab/tab-api.md#Permission))
 
 ### *3 ホスト権限
 パターンマッチングを利用できます。  
@@ -124,6 +127,7 @@ Date | Description
 2021/08/17 | 初版作成。
 2021/08/21 | Fetch APIに関するリンクを追加。
 2021/09/20 | APIバージョンの表記を修正
+2021/09/23 | 権限を追加
 
 ## Applies to
 Application | Target API Version

@@ -35,42 +35,61 @@ interface DownloadSettings {
     //ダウンロードの可否を表します。
     get canDownload: bool;
 
+    //動画DLフラグ
     downloadVideo: bool;
 
+    //コメントDLフラグ
     downloadComment: bool;
 
+    //過去ログDLフラグ
     downloadLog: bool;
 
+    //投稿者コメントDLフラグ
     downloadOwner: bool;
 
+    //かんたんコメントDLフラグ
     downloadEasy: bool;
 
+    //サムネイルDLフラグ
     downloadThumbnail: bool;
 
+    //動画情報DLフラグ
     downloadDescription: bool;
 
+    //市場情報DLフラグ
     downloadIchiba: bool;
 
+    //コメント数制限フラグ
     limitComment: bool;
 
+    //最大取得コメント数（コメント数制限が有効な場合のみ）
     commentLimitCount: number;
 
+    //解像度
     videoResolution: 1080 | 720 | 480 | 360 | 240;
 
+    //サムネイルの解像度
     thumbnailSize: 'player' | 'large' | 'normal' | 'medium' | 'normal';
 
+    //動画が存在する場合上書き
     overwriteIfExist: bool;
 
+    //動画が存在する場合スキップ
     skipIfExist: bool;
 
+    //他フォルダーに動画が存在する場合コピー
     copyIfExist: bool;
 
+    //MP4への変換すをスキップ
     disableEncode: bool;
 
-    startDownload(): Promise;
+    //DLを開始する
+    startDownload(): Promise<void>;
 
-    cancelDownload(): Promise;
+    //DLをキャンセルする
+    cancelDownload(): void;
 
+    //選択した動画をステージする
     stageSelectedVideos(): Promise;
 
 }
@@ -83,6 +102,7 @@ None
 Date | Description
 :---:| :---:
 2021/09/20 | 初版作成
+2021/09/21 | 説明を追加。一部の非同期APIを同期化。
 
 ## Applies to
 Application | Target API Version
