@@ -33,13 +33,17 @@
 
 interface TabHandle {
 
-    //タブを閉じます
+    /*
+    タブを閉じます
+    @returns 操作の成功状態を表す真偽値。
+    */
+
     close(): Promise<bool>;
 
     //引数で指定したhtmlを表示します。
     navigateToString(htmlContent: string): Promise<void>; 
 
-    //タブが閉じれれているかどうか
+    //タブが既に閉じているかどうか
     get isClosed: bool;
 
 }
@@ -55,12 +59,19 @@ application.tab.hideDefaultTab(tabName: 'downloadSetting');
 
 ```
 
+### About Resource
+- ```resource```権限[(参照)](../resource/resource-api.md#permission)を取得すると、resourceディレクトリ内のコンテンツにURLでアクセスできます。
+- resourceディレクトリは```https://nc-resource.nico/```にマップされます。
+- 例えば、resource/my-special-script.jsというファイル配置になっている場合、htmlのheaderに```<script src="https://nc-resource.nico/my-special-script.js" />```と記載することで、スクリプトを通常のウェブサーバーから取得するように追加できます。
+
+
 ## Q & A
 
 ## Revision
 Date | Description
 :---:| :---:
 2021/09/21 | 初版作成
+2021/09/23 | リソースに関する定義を追加。
 
 ## Applies to
 Application | Target API Version
