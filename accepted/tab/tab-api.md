@@ -48,7 +48,7 @@ interface TabHandle {
 }
 
 //タブを追加します。
-application.tab.add(title: string): TabHandle;
+application.tab.add(title: string): Promise<TabHandle>;
 
 ```
 
@@ -65,7 +65,7 @@ Date | Description
 :---:| :---:
 2021/09/21 | 初版作成
 2021/09/23 | リソースに関する定義を追加。
-2021/11/13 | 規定タブ削除APIを一旦削除。引数の訂正。
+2021/11/13 | 規定タブ削除APIを一旦削除。引数の訂正。APIを非同期化。
 
 ## Applies to
 Application | Target API Version
