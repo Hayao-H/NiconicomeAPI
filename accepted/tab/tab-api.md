@@ -37,25 +37,18 @@ interface TabHandle {
     タブを閉じます
     @returns 操作の成功状態を表す真偽値。
     */
-
-    close(): Promise<bool>;
+    close(): Promise<boolean>;
 
     //引数で指定したhtmlを表示します。
     navigateToString(htmlContent: string): Promise<void>; 
 
     //タブが既に閉じているかどうか
-    get isClosed: bool;
+    get isClosed: boolean;
 
 }
 
 //タブを追加します。
-application.tab.add(): TabHandle;
-
-/*
-デフォルトタブを隠します。
-現在は「設定」タブのみです。
-*/
-application.tab.hideDefaultTab(tabName: 'downloadSetting');
+application.tab.add(title: string): TabHandle;
 
 ```
 
@@ -72,6 +65,7 @@ Date | Description
 :---:| :---:
 2021/09/21 | 初版作成
 2021/09/23 | リソースに関する定義を追加。
+2021/11/13 | 規定タブ削除APIを一旦削除。引数の訂正。
 
 ## Applies to
 Application | Target API Version
