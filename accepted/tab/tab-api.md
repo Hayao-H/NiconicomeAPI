@@ -42,6 +42,12 @@ interface TabHandle {
     //引数で指定したhtmlを表示します。
     navigateToString(htmlContent: string): Promise<void>; 
 
+    //WebView2側にメッセージを送信します。*1
+    postMessage(message: string): void;
+
+    //メッセージハンドラを追加します。
+    addMessageHandler(handler: (message: string)=>void): void;
+
     //タブが既に閉じているかどうか
     get isClosed: boolean;
 
@@ -51,6 +57,15 @@ interface TabHandle {
 application.tab.add(title: string): Promise<TabHandle>;
 
 ```
+
+### *1 About "Message"
+- **WebView2側（受信）**
+
+    [こちらのページ](https://docs.microsoft.com/ja-jp/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson?view=webview2-dotnet-1.0.1054.31)（Microsoft公式、英語）の```Example```のコードの通りに実装してください。  
+
+- **WebView2側（送信）**
+
+    [こちらのページ](https://docs.microsoft.com/ja-jp/microsoft-edge/webview2/how-to/communicate-btwn-web-native)（Microsoft公式、日本語）の、「**postMessage を使用してメッセージ文字列を受信する**」の通りに実装してください。  
 
 ### About Resource
 - ```resource```権限[(参照)](../resource/resource-api.md#permission)を取得すると、resourceディレクトリ内のコンテンツにURLでアクセスできます。
@@ -66,6 +81,7 @@ Date | Description
 2021/09/21 | 初版作成
 2021/09/23 | リソースに関する定義を追加。
 2021/11/13 | 規定タブ削除APIを一旦削除。引数の訂正。APIを非同期化。
+2021/12/20 | メッセージ関連のAPIを追加。
 
 ## Applies to
 Application | Target API Version
