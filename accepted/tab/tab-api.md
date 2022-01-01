@@ -53,8 +53,12 @@ interface TabHandle {
 
 }
 
-//タブを追加します。
-application.tab.add(title: string): Promise<TabHandle>;
+/*
+* タブを追加します。  
+* title: タブのタイトル  
+* position: タブを追加する場所。ウィンドウ下部（出力タブなどが並ぶ位置）または、ウィンドウ上部かを選択してください。
+*/
+application.tab.add(title: string, position: 'top'|'bottom' = 'bottom'): Promise<TabHandle>;
 
 ```
 
@@ -82,6 +86,7 @@ Date | Description
 2021/09/23 | リソースに関する定義を追加。
 2021/11/13 | 規定タブ削除APIを一旦削除。引数の訂正。APIを非同期化。
 2021/12/20 | メッセージ関連のAPIを追加。
+2021/01/01 | タブの位置を指定するオプションを追加。
 
 ## Applies to
 Application | Target API Version

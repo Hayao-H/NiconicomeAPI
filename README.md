@@ -2,7 +2,7 @@
 NiconicomeのAddon API関連の草案をまとめます。
 
 ## API一覧
-[./accepted/README.md](./accepted/README.md)
+[./accepted/README.md](./accepted/README.md)  
 [./accepted/](./tree/main/accepted)
 
 ## フォルダー構成
