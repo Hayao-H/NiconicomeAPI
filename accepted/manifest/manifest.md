@@ -106,6 +106,7 @@
 - resource([参照](../resource/resource-api.md#Permission))
 - storage([参照](../storage/storage-api.md#Permission))
 - tab([参照](../tab/tab-api.md#Permission))
+- webview([参照](../webview/webview-api.md#Permission))
 
 ### *3 ホスト権限
 パターンマッチングを利用できます。  
@@ -113,8 +114,8 @@
 #### 例
 ```
 [
-    https://*.nicovideo.jp,
-    http://*.nicovideo.jp
+    "https://*.nicovideo.jp",
+    "http://*.nicovideo.jp"
 ]
 ```
 
@@ -128,6 +129,7 @@ Date | Description
 2021/08/21 | Fetch APIに関するリンクを追加。
 2021/09/20 | APIバージョンの表記を修正
 2021/09/23 | 権限を追加
+2022/01/01 | webview権限を追加。ホスト権限の例を修正。
 
 ## Applies to
 Application | Target API Version
