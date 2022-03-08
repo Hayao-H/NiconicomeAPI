@@ -32,6 +32,9 @@ application.downloadSettings: DownloadSettings;
 
 interface DownloadSettings {
 
+    //イベントリスナーを登録
+    addEventListner(event:'canDownloadChange',listener:()=>void);
+
     //ダウンロードの可否を表します。
     get canDownload: bool;
 
@@ -66,10 +69,10 @@ interface DownloadSettings {
     commentLimitCount: number;
 
     //解像度
-    videoResolution: 1080 | 720 | 480 | 360 | 240;
+    videoResolution: '1280x720' | '1280x720' | '854x480' | '640x360' | '426x240';
 
     //サムネイルの解像度
-    thumbnailSize: 'player' | 'large' | 'normal' | 'medium' | 'normal';
+    thumbnailSize: 'player' | 'large' | 'normal' | 'middle';
 
     //動画が存在する場合上書き
     overwriteIfExist: bool;
@@ -83,17 +86,27 @@ interface DownloadSettings {
     //MP4への変換すをスキップ
     disableEncode: bool;
 
-    //DLを開始する
-    startDownload(): Promise<void>;
+    /*
+    *DLを開始する
+    *   引数
+    *   - onMessage: ダウンローダーからの短いメッセージです。スナックバー表示など。
+    *   - onMessageVerbose: ダウンローダーからの詳細なメッセージです。Output APIを通した出力など。
+    */
+    startDownload(onMessage: string=>void, onMessageVerbose: string=>void): Promise<void>;
 
     //DLをキャンセルする
     cancelDownload(): void;
 
     //選択した動画をステージする
-    stageSelectedVideos(): Promise;
+    stageSelectedVideos(): void;
 
 }
 ```
+
+### Event
+#### DownloadSettings
+- canDownloadChange
+    ダウンロード可能状態が変更されたときに発火されます。
 
 ## Q & A
 None
@@ -103,6 +116,7 @@ Date | Description
 :---:| :---:
 2021/09/20 | 初版作成
 2021/09/21 | 説明を追加。一部の非同期APIを同期化。
+2022/03/08 | イベントを追加。サムネサイズの型を変更。解像度の型を変更。一部の非同期APIを同期化。一部のメソッドの引数を追加。
 
 ## Applies to
 Application | Target API Version
