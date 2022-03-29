@@ -23,8 +23,11 @@
 ```TypeScript
 application.hooks.registerPageAnalyzeFunction(func: (page: string) => DmcInfo): void;
 ```
-***argments***
-- page: 視聴ページのhtml。
+**argments**
+- page: 視聴ページのhtml。  
+
+**returns**
+- DmcInfo: 動画情報のインターフェース。詳細については、標準ライブラリの[当該ソース](https://github.com/Hayao-H/NiconicomeAddonCoreLib/blob/develop/%40types/net/hooks/types/dmcinfo.d.ts)を参照してください。
 
 
 ## Q & A
@@ -35,7 +38,8 @@ Date | Description
 :---:| :---:
 2021/08/17 | APIを定義。
 2021/08/21 | Target API Versionを明記。
-2021/09/20 | APIバージョンの表記を修正
+2021/09/20 | APIバージョンの表記を修正。
+2022/03/29 | 型についての注記を追加。
 
 ## Applies to
 Application | Target API Version
