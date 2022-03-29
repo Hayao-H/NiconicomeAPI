@@ -106,6 +106,7 @@
 - resource([参照](../resource/resource-api.md#Permission))
 - storage([参照](../storage/storage-api.md#Permission))
 - tab([参照](../tab/tab-api.md#Permission))
+- downloadSettings([参照](../download-settings/download-settings-api.md#permission))
 
 ### *3 ホスト権限
 パターンマッチングを利用できます。  
@@ -129,6 +130,7 @@ Date | Description
 2021/09/20 | APIバージョンの表記を修正
 2021/09/23 | 権限を追加
 2022/01/01 | ホスト権限の例を修正。
+2022/03/29 | 権限を追加。
 
 ## Applies to
 Application | Target API Version
