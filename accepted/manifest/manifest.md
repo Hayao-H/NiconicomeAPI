@@ -31,18 +31,15 @@
 - ```【必須】```：必ず定義。
 - ```【推奨】```：定義をお勧めします。
 - ```【任意】```：必要に応じて定義してください。 
-```jsonc
+```json
     {
         "manifest_version": "1.0", //マニフェストバージョン【必須】 *1
         /*
-        自動アップデート関連の設定。現在(v0.8.2)では未実装なので無効です。
+        自動アップデート関連の設定。（ターゲットAPIバージョン1.2.0以上で利用可能です。）
         */
         "auto_update_policy": { 
-            "auto_update": false, //有効フラグ
-            "github_release": true, //Github Releaseを利用する
-            "github_release_filename_pattern": ".*.zip", //ファイル名のパターン
-            "github_owner_name": "hoge", //ユーザー名
-            "github_repo_name": "fuga" //リポジトリ名
+            "auto_update": true, //有効フラグ
+            "updatejson-url": "https://raw.githubusercontent.com/Hayao-H/PageAnalyzePlugin/develop/update.json", //update.jsonのURL（MIMEタイプはapplication/jsonでなくとも問題ありません。）
         },
         "scripts": {
             /*
@@ -58,7 +55,7 @@
         バージョン。【必須】
         同一バージョンは上書きインストールできません。
         */
-        "version": "1.1.0", 
+        "version": "1.2.0", 
         /*
         同時インストール防止のユニークキー【推奨】
         */
@@ -131,6 +128,7 @@ Date | Description
 2021/09/23 | 権限を追加
 2022/01/01 | ホスト権限の例を修正。
 2022/03/29 | 権限を追加。
+2022/04/03 | 自動更新についての記述を追加。
 
 ## Applies to
 Application | Target API Version
