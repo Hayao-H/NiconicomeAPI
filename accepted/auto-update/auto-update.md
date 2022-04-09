@@ -46,8 +46,9 @@
 Date | Description
 :---:| :---:
 2022/04/03 | 初版作成
+2022/04/09 | 実装予定バージョンを延期。
 
 ## Applies to
 Application | Target API Version
 :--: | --
-Niconicome | >= 1.2.0
+Niconicome | >= 1.3.0
