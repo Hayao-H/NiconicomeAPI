@@ -33,7 +33,7 @@
 - ```【任意】```：必要に応じて定義してください。 
 ```jsonc
     {
-        "manifest_version": "1.0", //マニフェストバージョン【必須】 *1
+        "manifest_version": "1.1", //マニフェストバージョン【必須】 *1
         "scripts": {
             /*
             バックグラウンドスクリプトです。【必須】
@@ -44,6 +44,7 @@
         "name": "", //アドオン名【必須】
         "author": "", //作者名【必須】
         "description": "", //説明【必須】
+        "homepage": "", //ホームページ【推奨】
         /*
         バージョン。【必須】
         同一バージョンは上書きインストールできません。
@@ -81,16 +82,16 @@
             "128": "icons/128.png"
         },
         /*
-        リモートアップデート関連の設定。（ターゲットAPIバージョン1.3.0以上で利用可能です。*4）
+        リモートアップデート関連の設定。（ターゲットAPIバージョン1.3.0以上で利用可能です。*4）【任意】
         */
         "remote_update_policy": { 
-            "updatejson-url": "https://raw.githubusercontent.com/Hayao-H/PageAnalyzePlugin/develop/update.json", //update.jsonのURL（MIMEタイプはapplication/jsonでなくとも問題ありません。）
+            "updatejson-url": "https://raw.githubusercontent.com/Hayao-H/PageAnalyzePlugin/update/update.json", //update.jsonのURL（MIMEタイプはapplication/jsonでなくとも問題ありません。）
         },
     }
 ```
 
 #### *1 マニフェストバージョン
-現行のマニフェストバージョンは**1.0**です。  
+現行のマニフェストバージョンは**1.1**です。  
 このバージョンはマニフェストファイルに破壊的変更が行われた際に変更されます。  
 項目の追加は破壊的変更に当たらないので変更されません。
 
@@ -116,7 +117,7 @@
 ]
 ```
 
-### *3 自動アップデート
+### *4 自動アップデート
 アップデート情報ファイルをホストすることでアドオンを自動的にアップデートさせることができます。
 詳しくは[こちら](../auto-update/auto-update.md)
 
@@ -136,6 +137,7 @@ Date | Description
 2022/04/03 | 自動更新についての記述を追加。
 2022/04/09 | 自動更新機能の実装を延期。
 2022/10/14 | リモート更新に変更。
+2022/10/25 | マニフェストのバージョンを変更。ホームページ情報を追加。
 
 ## Applies to
 Application | Target API Version
