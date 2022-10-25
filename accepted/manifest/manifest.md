@@ -31,22 +31,15 @@
 - ```【必須】```：必ず定義。
 - ```【推奨】```：定義をお勧めします。
 - ```【任意】```：必要に応じて定義してください。 
-```json
+```jsonc
     {
         "manifest_version": "1.0", //マニフェストバージョン【必須】 *1
-        /*
-        自動アップデート関連の設定。（ターゲットAPIバージョン1.3.0以上で利用可能です。）
-        */
-        "auto_update_policy": { 
-            "auto_update": true, //有効フラグ
-            "updatejson-url": "https://raw.githubusercontent.com/Hayao-H/PageAnalyzePlugin/develop/update.json", //update.jsonのURL（MIMEタイプはapplication/jsonでなくとも問題ありません。）
-        },
         "scripts": {
             /*
             バックグラウンドスクリプトです。【必須】
             アドオンが読み込まれると自動的に実行されます。
             */
-            "background_script": "scripts/main.js" 
+            "background_script": "scripts/main.js" ,
         },
         "name": "", //アドオン名【必須】
         "author": "", //作者名【必須】
@@ -86,7 +79,13 @@
         "icons": {
             "32": "icons/32.png",
             "128": "icons/128.png"
-        }
+        },
+        /*
+        リモートアップデート関連の設定。（ターゲットAPIバージョン1.3.0以上で利用可能です。*4）
+        */
+        "remote_update_policy": { 
+            "updatejson-url": "https://raw.githubusercontent.com/Hayao-H/PageAnalyzePlugin/develop/update.json", //update.jsonのURL（MIMEタイプはapplication/jsonでなくとも問題ありません。）
+        },
     }
 ```
 
@@ -104,6 +103,7 @@
 - storage([参照](../storage/storage-api.md#Permission))
 - tab([参照](../tab/tab-api.md#Permission))
 - downloadSettings([参照](../download-settings/download-settings-api.md#permission))
+- remoteUpdate([参照](../remote-update/remote-update.md#permission))
 
 ### *3 ホスト権限
 パターンマッチングを利用できます。  
@@ -115,6 +115,11 @@
     "http://*.nicovideo.jp"
 ]
 ```
+
+### *3 自動アップデート
+アップデート情報ファイルをホストすることでアドオンを自動的にアップデートさせることができます。
+詳しくは[こちら](../auto-update/auto-update.md)
+
 
 ## Q & A
 None
@@ -130,6 +135,7 @@ Date | Description
 2022/03/29 | 権限を追加。
 2022/04/03 | 自動更新についての記述を追加。
 2022/04/09 | 自動更新機能の実装を延期。
+2022/10/14 | リモート更新に変更。
 
 ## Applies to
 Application | Target API Version
