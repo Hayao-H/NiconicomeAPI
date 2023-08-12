@@ -25,6 +25,7 @@
 ### Detailed Infomations
 - [PageAnalyze](./page-analyze.md)
 - [WatchSession](./watch-session.md)
+- [RemoteInfo](./remote-info.md)
 
 ### Permission
 ```hooks```
