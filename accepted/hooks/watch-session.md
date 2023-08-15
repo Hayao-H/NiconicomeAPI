@@ -35,7 +35,7 @@ interface NiconicoSessionInfo {
     SessionId:string;
 
     //🤔
-    KeyURI:string|null;
+    KeyURI:string;
 }
 ```
 
