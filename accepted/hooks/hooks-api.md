@@ -22,6 +22,12 @@
 ### Permission
 ```hooks```
 
+### API
+```TypeScript
+//関数の登録状況を確認
+application.hooks.isRegistered(hookType: "PageAnalyze" | "WatchSession" | "RemoteInfo");
+```
+
 ### Detailed Infomations
 - [PageAnalyze](./page-analyze.md)
 - [WatchSession](./watch-session.md)
@@ -39,8 +45,9 @@ Date | Description
 2021/08/17 | APIを定義。
 2021/08/21 | Watch Sessionへのリンクを追加。
 2021/09/20 | APIバージョンの表記を修正
+2023/08/15 | 関数の登録状況確認APIを追加。
 
 ## Applies to
 Application | Target API Version
 :--: | --
-Niconicome | >= 1.0
+Niconicome | >= 1.4.0
