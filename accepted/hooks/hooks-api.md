@@ -25,7 +25,7 @@
 ### API
 ```TypeScript
 //関数の登録状況を確認
-application.hooks.isRegistered(hookType: "PageAnalyze" | "WatchSession" | "RemoteInfo");
+application.hooks.isRegistered(hookType: "PageAnalyze" | "WatchSession" | "RemoteInfo"): boolean;
 ```
 
 ### Detailed Infomations
